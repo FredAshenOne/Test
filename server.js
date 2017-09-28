@@ -1,10 +1,12 @@
-var app = require('express')();
+var express = require('express');
 var http = require('http').Server(app);
 var path = require('path');
 var io = require('socket.io')(http);
+var app = express();
 
+app.use(express.static('public'));
 app.get('/', function (req,res){
-  res.sendFile(path.join(__dirname,'../','index.html'));
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 io.on('connection',function(socket){
