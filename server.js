@@ -3,7 +3,7 @@ var app = express();
 var http = require('http').Server(app);
 var path = require('path')
 var io = require('socket.io')(http);
-
+asdasda 
 app.use(express.static('public'));
 
 app.get('/', function (req, res){
