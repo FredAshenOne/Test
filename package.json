@@ -2,12 +2,16 @@
   "name": "socket-chat-example",
   "version": "1.0.0",
   "description": "my first socket.io app",
-  "main": "js/main.js",
+  "main": "public/js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon js/main.js",
+    "start":"nodemon public/js/main.js"
   },
-  "author": "Alfredo Lara",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FredAshenOne/Test.git"
+  },
+  "author": "alfredo lara",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.5",
